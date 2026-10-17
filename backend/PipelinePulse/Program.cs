@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PipelinePulse.Data;
+using PipelinePulse.Repositories;
+using PipelinePulse.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,8 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' is not configured.");
 builder.Services.AddDbContext<PipelineDbContext>(options =>
     options.UseSqlite(connectionString));
+builder.Services.AddScoped<IHealthRepository, HealthRepository>();
+builder.Services.AddScoped<IHealthService, HealthService>();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
