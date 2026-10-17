@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|c:\\users\\sande\\desktop\\sangeetha\\project\\pipeline-pulse\\backend\\pipelinepulse\\pipelinepulse.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|solutionrelative:pipelinepulse.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|c:\\users\\sande\\desktop\\sangeetha\\project\\pipeline-pulse\\backend\\pipelinepulse\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|c:\\users\\sande\\desktop\\sangeetha\\project\\pipeline-pulse\\backend\\pipelinepulse\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|c:\\users\\sande\\desktop\\sangeetha\\project\\pipeline-pulse\\backend\\pipelinepulse\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|c:\\users\\sande\\desktop\\sangeetha\\project\\pipeline-pulse\\backend\\pipelinepulse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15E25C69-9A72-D0F4-1EF8-040BA1935472}|PipelinePulse.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PipelinePulse.csproj",
+              "DocumentMoniker": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\PipelinePulse.csproj",
+              "RelativeDocumentMoniker": "PipelinePulse.csproj",
+              "ToolTip": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\PipelinePulse.csproj",
+              "RelativeToolTip": "PipelinePulse.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-16T13:08:17.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-16T13:00:00.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-16T12:56:32.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-16T12:56:07.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sande\\Desktop\\Sangeetha\\Project\\pipeline-pulse\\backend\\PipelinePulse\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T12:52:22.867Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@PipelinePulse_HostAddress = http://localhost:5084
+
+GET {{PipelinePulse_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
