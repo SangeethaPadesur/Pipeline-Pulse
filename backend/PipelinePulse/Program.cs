@@ -13,6 +13,8 @@ builder.Services.AddDbContext<PipelineDbContext>(options =>
     options.UseSqlite(connectionString));
 builder.Services.AddScoped<IHealthRepository, HealthRepository>();
 builder.Services.AddScoped<IHealthService, HealthService>();
+builder.Services.AddScoped<IPipelineRepository, PipelineRepository>();
+builder.Services.AddScoped<IPipelineService, PipelineService>();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();

@@ -8,6 +8,7 @@ public class PipelineDbContext(DbContextOptions<PipelineDbContext> options) : Db
     public DbSet<Pipeline> Pipelines => Set<Pipeline>();
     public DbSet<Run> Runs => Set<Run>();
     public DbSet<Note> Notes => Set<Note>();
+    public DbSet<IdempotencyRecord> IdempotencyRecords => Set<IdempotencyRecord>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -24,7 +25,8 @@ public class PipelineDbContext(DbContextOptions<PipelineDbContext> options) : Db
         pipeline.HasMany(item => item.Runs)
             .WithOne(item => item.Pipeline)
             .HasForeignKey(item => item.PipelineId)
-            .IsRequired();
+            .IsRequired()
+            .OnDelete(DeleteBehavior.Cascade);
 
         var run = modelBuilder.Entity<Run>();
 
@@ -43,7 +45,8 @@ public class PipelineDbContext(DbContextOptions<PipelineDbContext> options) : Db
         run.HasMany(item => item.Notes)
             .WithOne(item => item.Run)
             .HasForeignKey(item => item.RunId)
-            .IsRequired();
+            .IsRequired()
+            .OnDelete(DeleteBehavior.Cascade);
 
         var note = modelBuilder.Entity<Note>();
 
@@ -53,6 +56,14 @@ public class PipelineDbContext(DbContextOptions<PipelineDbContext> options) : Db
         note.Property(item => item.Author).IsRequired();
         note.Property(item => item.Body).IsRequired();
         note.Property(item => item.CreatedAt).IsRequired();
+
+        var idempotencyRecord = modelBuilder.Entity<IdempotencyRecord>();
+
+        idempotencyRecord.HasKey(item => item.Key);
+        idempotencyRecord.Property(item => item.Key).HasMaxLength(200).IsRequired();
+        idempotencyRecord.Property(item => item.RequestHash).HasMaxLength(64).IsRequired();
+        idempotencyRecord.Property(item => item.ResponseBody).IsRequired();
+        idempotencyRecord.Property(item => item.ResponseLocation).IsRequired();
     }
 
     private static string ToDatabaseValue(PipelineProduct product) => product switch

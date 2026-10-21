@@ -4,3 +4,85 @@ GET {{PipelinePulse_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{PipelinePulse_HostAddress}}/pipelines?page=1&pageSize=20&name=nightly&productType=flasharray
+Accept: application/json
+
+###
+
+GET {{PipelinePulse_HostAddress}}/pipelines/{{pipelineId}}
+Accept: application/json
+
+###
+
+PATCH {{PipelinePulse_HostAddress}}/pipelines/{{pipelineId}}
+Content-Type: application/json
+
+{
+  "name": "FlashArray Nightly Updated"
+}
+
+###
+
+DELETE {{PipelinePulse_HostAddress}}/pipelines/{{pipelineId}}
+
+###
+
+GET {{PipelinePulse_HostAddress}}/pipelines/{{pipelineId}}/runs?status=failed&limit=20
+Accept: application/json
+
+###
+
+POST {{PipelinePulse_HostAddress}}/pipelines/{{pipelineId}}/runs
+Content-Type: application/json
+
+{
+  "triggeredBy": "scheduler",
+  "commitSha": "9f1c2a7d3b4e5f60718293a4b5c6d7e8f9a0b1c2"
+}
+
+###
+
+GET {{PipelinePulse_HostAddress}}/runs/{{runId}}
+Accept: application/json
+
+###
+
+PATCH {{PipelinePulse_HostAddress}}/runs/{{runId}}
+Content-Type: application/json
+
+{
+  "status": "passed"
+}
+
+###
+
+GET {{PipelinePulse_HostAddress}}/runs/{{runId}}/events
+Accept: text/event-stream
+
+###
+
+POST {{PipelinePulse_HostAddress}}/runs/{{runId}}/notes
+Content-Type: application/json
+
+{
+  "author": "priya.n",
+  "body": "Retry passed; investigate intermittent timeout."
+}
+
+###
+
+DELETE {{PipelinePulse_HostAddress}}/notes/{{noteId}}
+
+###
+
+POST {{PipelinePulse_HostAddress}}/pipelines
+Content-Type: application/json
+Idempotency-Key: flasharray-nightly-create-001
+
+{
+  "name": "FlashArray Nightly",
+  "productType": "flasharray"
+}
+
+###
